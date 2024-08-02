@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>JunnyB - 평택고덕속눈썹 쥬니비</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Yeseva+One&display=swap?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+  </head>
+  <body class="bg-body" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+        <title>Search</title>
+        <path fill="currentColor" d="M19 3C13.488 3 9 7.488 9 13c0 2.395.84 4.59 2.25 6.313L3.281 27.28l1.439 1.44l7.968-7.969A9.922 9.922 0 0 0 19 23c5.512 0 10-4.488 10-10S24.512 3 19 3zm0 2c4.43 0 8 3.57 8 8s-3.57 8-8 8s-8-3.57-8-8s3.57-8 8-8z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="user" viewBox="0 0 16 16">
+        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="cart" viewBox="0 0 16 16">
+        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="arrow-left" viewBox="0 0 32 32">
+        <path fill="currentColor" d="m13.281 6.781l-8.5 8.5l-.687.719l.687.719l8.5 8.5l1.438-1.438L7.938 17H28v-2H7.937l6.782-6.781z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="arrow-right" viewBox="0 0 32 32">
+        <path fill="currentColor" d="M18.719 6.781L17.28 8.22L24.063 15H4v2h20.063l-6.782 6.781l1.438 1.438l8.5-8.5l.687-.719l-.687-.719z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="shipping-fast" viewBox="0 0 32 32">
+        <path fill="currentColor" d="M0 6v2h19v15h-6.156c-.446-1.719-1.992-3-3.844-3c-1.852 0-3.398 1.281-3.844 3H4v-5H2v7h3.156c.446 1.719 1.992 3 3.844 3c1.852 0 3.398-1.281 3.844-3h8.312c.446 1.719 1.992 3 3.844 3c1.852 0 3.398-1.281 3.844-3H32v-8.156l-.063-.157l-2-6L29.72 10H21V6zm1 4v2h9v-2zm20 2h7.281L30 17.125V23h-1.156c-.446-1.719-1.992-3-3.844-3c-1.852 0-3.398 1.281-3.844 3H21zM2 14v2h6v-2zm7 8c1.117 0 2 .883 2 2s-.883 2-2 2s-2-.883-2-2s.883-2 2-2zm16 0c1.117 0 2 .883 2 2s-.883 2-2 2s-2-.883-2-2s.883-2 2-2z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="shopping-cart" viewBox="0 0 32 32">
+        <path fill="currentColor" d="M5 7c-.55 0-1 .45-1 1s.45 1 1 1h2.219l2.625 10.5c.222.89 1.02 1.5 1.937 1.5H23.25c.902 0 1.668-.598 1.906-1.469L27.75 10H11l.5 2h13.656l-1.906 7H11.781L9.156 8.5A1.983 1.983 0 0 0 7.22 7zm17 14c-1.645 0-3 1.355-3 3s1.355 3 3 3s3-1.355 3-3s-1.355-3-3-3zm-9 0c-1.645 0-3 1.355-3 3s1.355 3 3 3s3-1.355 3-3s-1.355-3-3-3zm0 2c.563 0 1 .438 1 1c0 .563-.438 1-1 1c-.563 0-1-.438-1-1c0-.563.438-1 1-1zm9 0c.563 0 1 .438 1 1c0 .563-.438 1-1 1c-.563 0-1-.438-1-1c0-.563.438-1 1-1z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="gift" viewBox="0 0 32 32">
+        <path fill="currentColor" d="M12 5c-1.645 0-3 1.355-3 3c0 .352.074.684.188 1H4v6h1v13h22V15h1V9h-5.188A2.95 2.95 0 0 0 23 8c0-1.645-1.355-3-3-3c-1.75 0-2.938 1.328-3.719 2.438c-.105.148-.187.292-.281.437c-.094-.145-.176-.29-.281-.438C14.938 6.329 13.75 5 12 5zm0 2c.625 0 1.438.672 2.063 1.563c.152.218.128.23.25.437H12c-.566 0-1-.434-1-1c0-.566.434-1 1-1zm8 0c.566 0 1 .434 1 1c0 .566-.434 1-1 1h-2.313c.122-.207.098-.219.25-.438C18.563 7.673 19.375 7 20 7zM6 11h20v2h-9v-1h-2v1H6zm1 4h18v11h-8V16h-2v10H7z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="return" viewBox="0 0 32 32">
+        <path fill="currentColor" d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13s13-5.832 13-13h-2c0 6.086-4.914 11-11 11S5 22.086 5 16S9.914 5 16 5c3.875 0 7.262 1.984 9.219 5H20v2h8V4h-2v3.719C23.617 4.844 20.02 3 16 3z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="quote" viewBox="0 0 24 24">
+        <path fill="currentColor" d="m15 17l2-4h-4V6h7v7l-2 4h-3Zm-9 0l2-4H4V6h7v7l-2 4H6Z" />
+      </symbol>      
+      <symbol xmlns="http://www.w3.org/2000/svg" id="nav-icon" viewBox="0 0 16 16">
+        <path d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="close" viewBox="0 0 16 16">
+        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="navbar-icon" viewBox="0 0 16 16">
+        <path d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z" />
+      </symbol>
+    </svg>
+
+    <div id="preloader">
+      <span class="loader">
+        <span class="loader-inner"></span>
+      </span>
+    </div>
+
+    <header id="header" class="site-header text-black">
+      <nav id="header-nav" class="navbar navbar-expand-lg px-3 mb-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+			  <h1 class="logo fw-bold">JUNNY.B <span class="fs-4">⯌</span></h1>
+          </a>
+          <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <svg class="navbar-icon" width="50" height="50">
+              <use xlink:href="#navbar-icon"></use>
+            </svg>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
+            <div class="offcanvas-header px-4 pb-0">
+              <a class="navbar-brand" href="index.html">
+                <h1 class="logo fw-bold">JUNNY.B <span class="fs-4">⯌</span></h1>
+              </a>
+              <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul id="navbar" class="navbar-nav text-uppercase justify-content-end align-items-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link me-4" href="#about-us">쥬니비 소개</a>
+                </li>
+                <li class="nav-item dropdown me-4">
+                  <a class="nav-link dropdown-toggle" href="#price" id="servicedrop" data-bs-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">시술안내</a>
+                  <ul class="dropdown-menu list-unstyled" aria-labelledby="servicedrop">
+                    <li>
+                      <a href="#price" class="dropdown-item item-anchor">연장 <span class="badge bg-secondary text-dark ms-2">LONG</span></a>
+                    </li>
+                    <li>
+                      <a href="#price" class="dropdown-item item-anchor">펌 <span class="badge bg-secondary text-dark ms-2">CURL</span></a>
+                    </li>
+                    <li>
+                      <a href="#price" class="dropdown-item item-anchor">멤버쉽 <span class="badge bg-secondary text-dark ms-2">PRO</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdownPages" data-bs-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">커뮤니티</a>
+                  <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownPages">
+                    <li>
+                      <a href="#" class="dropdown-item item-anchor">안내사항 <span class="badge bg-secondary text-dark ms-2">NOTICE</span></a>
+                    </li>
+                    <li>
+                      <a href="#review" class="dropdown-item item-anchor">후기모음 <span class="badge bg-secondary text-dark ms-2">REVIEW</span></a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/junny.b_/" class="dropdown-item item-anchor">인스타그램 <span class="badge bg-secondary text-dark ms-2">INSTARGRAM</span></a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item item-anchor">블로그 <span class="badge bg-secondary text-dark ms-2">BLOG</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <div class="user-items ps-5">
+                    <ul class="d-flex justify-content-end list-unstyled">
+                      <li class="pe-3">
+                        <a class="btn fs-6 btn-outline-secondary" href="https://pcmap.place.naver.com/place/1849973856/home#">
+                          <svg class="user" width="20" height="20" style="margin-top:-3px;">
+                            <use xlink:href="#gift"></use>
+                          </svg> 지도
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://pcmap.place.naver.com/place/1849973856/ticket?from=map&fromPanelNum=2&timestamp=202408021358" class="btn fs-6 btn-success">
+							<img src="images/navericon.png" width="20px" style="margin-top:-2px;margin-right: 2px;" alt="navericon" /> 예약
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>    
+    </header>
+	  
+	<section id="main-visual">
+		<div class="main-visual">
+		</div>
+		<h1 class="main-h1">Junny.B Eyelash<br>
+			<span class="fs-5" style="font-family: 'Pretendard';">평택고덕 속눈썹 정착지, 쥬니비</span>
+		</h1>
+		<div class="main-visual-bt"><img src="images/mainvisualbottom.png" width="100%" alt="" /></div>
+	</section>
+
+    <section id="billboard" class="overflow-hidden">
+      <div class="swiper main-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="banner-item" style="background-image: url('images/banner-image1.jpg'); background-repeat: no-repeat; background-position: right; height: 682px;">
+                    <div class="banner-content padding-large">
+                      <h1 class="display-2 text-uppercase text-dark pb-2 font-yo">EyeLash Curl Design</h1>
+                      <p>쥬니비에서는 바쁜 일상 속에서도 아름다움을 유지하고자 하는 분들을 위해 전문적인 속눈썹 펌 디자인 시술을 제공해요.<br>
+						  속눈썹 펌은 화장 시간이 절약되고 자연스러운 눈매를 강조하는 효과가 있어 많은 고객들이 선호하는 시술입니다.<br>
+						  쥬니비의 속눈썹 펌은 눈매와 얼굴형에 맞춘 맞춤형 디자인을 제공해 한층 더 뚜렷하고 매력적인 눈매를 연출해드려요.<br>
+						  시술 후 주의사항으로는 당일 눈을 비비거나 자극, 물을 피하고, 뷰러 사용을 삼가주세요!</p>                      
+                      <a href="#" class="btn btn-medium btn-arrow position-relative mt-5">
+                        <span class="text-uppercase">더 알아보기 🐰</span>
+                      </a>   
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="banner-item" style="background-image: url(images/banner-image2.jpg); background-repeat: no-repeat; background-position: right; height: 682px;">
+                    <div class="banner-content padding-large">
+                      <h1 class="display-1 text-uppercase text-dark pb-2 font-yo">EyeLash Long Design</h1>
+                      <p>쥬니비에서는 자연스럽고 풍성한 속눈썹을 원하는 고객들을 위해 속눈썹 연장 디자인 시술을 제공하고 있답니다!<br>
+						  속눈썹 연장은 짧고 빈약한 속눈썹을 보완하고, 길고 풍성한 속눈썹을 연출하여 인상적인 눈매를 만들어줍니다.<br>
+						  쥬니비의 전문가들은 각 고객의 눈매와 속눈썹 상태를 고려하여 가장 어울리는 디자인을 추천드려요.<br>
+						  쥬니비와 함께하시면 자연스럽고 아름다운 눈매를 오랫동안 유지할 수 있을거에요.
+                      </p>                                         
+                      <a href="#" class="btn btn-medium btn-arrow position-relative mt-5">
+                        <span class="text-uppercase">더 알아보기 ✨</span>
+                      </a>   
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination position-absolute"></div>
+    </section>
+
+    <section id="company-services" class="padding-large">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 pb-3">
+            <div class="icon-box d-flex align-items-center">
+              <div class="icon-box-icon pt-3 pe-3 pb-3 ps-3">
+                <img width="40px" src="images/navericon_.png" alt="navericon" />
+              </div>
+              <div class="icon-box-content ps-3">
+                <h3 class="card-title text-uppercase text-dark">1:1 예약 시술제</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 pb-3">
+            <div class="icon-box d-flex align-items-center">
+              <div class="icon-box-icon pt-3 pe-3 pb-3 ps-3">
+                <img width="42px" src="https://cdn-icons-png.flaticon.com/512/6014/6014516.png" alt="loveanimal" />
+              </div>
+              <div class="icon-box-content ps-3">
+                <h3 class="card-title text-uppercase text-dark">반려동물 동반가능</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 pb-3">
+            <div class="icon-box d-flex align-items-center">
+              <div class="icon-box-icon pt-3 pe-3 pb-3 ps-3">
+                <img width="42px" src="https://icons.veryicon.com/png/o/miscellaneous/simple-linetype-icon/coupon-62.png" alt="coupon" />
+              </div>
+              <div class="icon-box-content ps-3">
+                <h3 class="card-title text-uppercase text-dark">첫방문 쿠폰이벤트</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 pb-3">
+            <div class="icon-box d-flex align-items-center">
+              <div class="icon-box-icon pt-3 pe-3 pb-3 ps-3">
+                <img width="42px" src="https://www.iconpacks.net/icons/2/free-car-icon-2897-thumb.png" alt="car" />
+              </div>
+              <div class="icon-box-content ps-3">
+                <h3 class="card-title text-uppercase text-dark">무료 주차</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-us">
+      <div class="container-fluid">
+        <div class="row align-items-center justify-content-between g-5">
+          <div class="col-lg-6">
+            <div class="image-holder mb-4 p-5 jarallax">
+                <img src="images/single-image1.jpg" alt="single" class="img-fluid jarallax-img">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="detail p-5">
+              <div class="display-header">
+                <h2 class="display-2 text-uppercase text-dark pb-2 font-yo">Junny.B</h2>
+                <p class="pb-3">쥬니비는 고객 맞춤형 서비스와 세심한 케어를 바탕으로 평택 고덕 지역의 대표적인 아이래쉬샵으로 자리매김하고 있습니다.<br>
+					매장을 방문하시면 마스코트 솜뭉치의 따스한 환영을 받을 수 있어요.<br>쥬니비의 전문적인 시술과 함께 아름다운 눈매를 쟁취하실 수 있습니다.</p>
+                <p>속눈썹 펌과 연장뿐만 아니라 눈썹, 입술 등 다양한 뷰티 서비스를 제공합니다.<br>
+					서정리역 2번 출구에서 도보로 5분 거리에 위치해 있어 대중교통으로 쉽게 오실 수 있고,<br>
+					지하 2층까지 마련된 주차 공간으로 자가용 이용하시는 분들도 편하게 오실 수 있어요.</p>
+                <a href="https://naver.me/xpr0I15s" class="btn btn-medium btn-arrow outline-dark position-relative mt-3">
+                  <span class="text-uppercase">매장 둘러보기 👀</span>
+                </a>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!--<section id="featured-products" class="product-store position-relative padding-large">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="display-header pb-3 d-flex justify-content-between flex-wrap col-md-12">
+            <h2 class="display-2 text-dark text-uppercase">Our Featured Products</h2> 
+            <a href="shop.html" class="btn btn-medium btn-arrow btn-normal position-relative">
+              <span class="text-uppercase">Shop All</span>            
+              <svg class="arrow-right position-absolute" width="18" height="20">
+                <use xlink:href="#arrow-right"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div id="featured-swiper" class="product-swiper col-md-12">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
+                    <div class="image-holder">
+                      <img src="images/product-item1.jpg" alt="product-item" class="product-image img-fluid">
+                    </div>
+                    <div class="cart-concern">
+                      <h3 class="card-title text-uppercase pt-3 text-primary">
+                        <a href="single-product.html" class="text-primary">Black Sofa Set</a>
+                      </h3>
+                      <div class="cart-info">
+                        <a class="pseudo-text-effect" href="#" data-after="ADD TO CART"><span>$200</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
+                    <div class="image-holder">
+                      <img src="images/product-item2.jpg" alt="product-item" class="product-image img-fluid">
+                    </div>
+                    <div class="cart-concern">
+                      <h3 class="card-title text-uppercase pt-3 text-primary">
+                        <a href="single-product.html" class="text-primary">Circle Dining Table</a>
+                      </h3>
+                      <div class="cart-info">
+                        <a class="pseudo-text-effect" href="#" data-after="ADD TO CART">
+                          <span>$200</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
+                    <div class="image-holder">
+                      <img src="images/product-item3.jpg" alt="product-item" class="product-image img-fluid">
+                    </div>
+                    <div class="cart-concern">
+                      <h3 class="card-title text-uppercase pt-3 text-primary">
+                        <a href="single-product.html" class="text-primary">Minimal Sofa</a>
+                      </h3>
+                      <div class="cart-info">
+                        <a class="pseudo-text-effect" href="#" data-after="ADD TO CART">
+                          <span>$200</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
+                    <div class="image-holder">
+                      <img src="images/product-item4.jpg" alt="product-item" class="product-image img-fluid">
+                    </div>
+                    <div class="cart-concern">
+                      <h3 class="card-title text-uppercase pt-3 text-primary">
+                        <a href="single-product.html" class="text-primary">Pattern Tea Table</a>
+                      </h3>
+                      <div class="cart-info">
+                        <a class="pseudo-text-effect" href="#" data-after="ADD TO CART">
+                          <span>$200</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
+                    <div class="image-holder">
+                      <img src="images/product-item5.jpg" alt="product-item" class="product-image img-fluid">
+                    </div>
+                    <div class="cart-concern">
+                      <h3 class="card-title text-uppercase pt-3 text-primary">
+                        <a href="single-product.html" class="text-primary">Black Sofa Set</a>
+                      </h3>
+                      <div class="cart-info">
+                        <a class="pseudo-text-effect" href="#" data-after="ADD TO CART">
+                          <span>$200</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card image-zoom-effect link-effect d-flex flex-wrap">
+                    <div class="image-holder">
+                      <img src="images/product-item6.jpg" alt="product-item" class="product-image img-fluid">
+                    </div>
+                    <div class="cart-concern">
+                      <h3 class="card-title text-uppercase pt-3 text-primary">
+                        <a href="single-product.html" class="text-primary">Minimal Sofa</a>
+                      </h3>
+                      <div class="cart-info">
+                        <a class="pseudo-text-effect" href="#" data-after="ADD TO CART">
+                          <span>$200</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination text-center mt-5"></div>
+          </div>
+        </div>
+      </div>      
+    </section>
+-->
+
+    <section id="review" class="position-relative mt-5 pt-5">
+      <div class="container">
+		  <div class="row"><h1 class="font-yo text-center">REAL REVIEW</h1></div>
+        <div class="row">
+          <div class="review-content position-relative">
+            <div class="swiper-icon swiper-arrow swiper-arrow-prev position-absolute d-flex align-items-center justify-content-center">
+              <svg class="icon-arrow" width="25" height="25">
+                <use xlink:href="#arrow-left" />
+              </svg>
+            </div>
+            <div class="swiper testimonial-swiper">
+              <div class="quotation text-center">
+                <svg class="quote">
+                  <use xlink:href="#quote" />
+                </svg>
+              </div>
+              <div class="swiper-wrapper">
+				<div class="swiper-slide text-center d-flex justify-content-center">
+                  <div class="review-item col-md-10">
+                    <i class="icon icon-review"></i>
+                    <blockquote class="fs-4">“저번에 한 번 와보고 넘 좋아서 또 오려고 했는데...<br>
+						유지력이 너무 좋아서 이제야 왔어요...<br>
+						저두 몰랐는데 73일만에 예약이래요..! 두 달 넘게 유지가 아주 잘되네요.<br>
+						사실 아직도 펌이 꽤 많이 남아있었는데 시간 날 때 맞춰서 그냥 예약해버렸습니다 😅<br>
+						다른 곳에서 받을 땐 길어야 6주 정도 유지됐어요.<br>
+						펌 받는 시간도 50분이면 끝나고 오른쪽 눈이 눈두덩이에 닿아서<br>
+						좀 더 풀린거같다고 이번엔 오른쪽을 크케 말아주셨어요 맞춤펌 최고,,❤️✨️<br>
+						가격도 오전이벤트로 넘 저렴하고 쥬니비 안올이유가 없아요.. 다음에도 쥬니비로 올거에요!”</blockquote>
+                    <div class="author-detail">
+                      <div class="name text-primary text-uppercase pt-2">또토리 님 💕재방문</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide text-center d-flex justify-content-center">
+                  <div class="review-item col-md-10">
+                    <i class="icon icon-review"></i>
+                    <blockquote class="fs-4">“예쁘기도 진짜 예쁘고 유지력이 엄청 좋아요.<br>속눈썹펌한지 얼마나 됐지?하고 찾아보면 6주 이상 지나있어서 신기합니다 ㅎㅎ<br>쥬니비는 돈 진짜 안아까워요...<br>영양제도 열심히 발라보겠습니다 🖤”</blockquote>
+                    <div class="author-detail">
+                      <div class="name text-primary text-uppercase pt-2">또토리 ddotori 님 💕재재방문</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide text-center d-flex justify-content-center">
+                  <div class="review-item col-md-10">
+                    <i class="icon icon-review"></i>
+                    <blockquote class="fs-4">“일 하다 예민해지고 집중할때 속눈썹 만지고 뽑는 이상한 습관이 있는데,<br>
+						이번에 오른쪽이 왕창 빠진줄 모르고 속눈썹 펌 하러 갔어요 ㅎㅎ<br>
+						원장님 당황 하셨을텐데, 그럼에도 불구하고 최대한 자연스럽게<br>짧은 속눈썹의 영혼까지 끌어올려 주셔서 이쁘게 펌 되었더라구요!<br>
+						관리 방법 등 조언도 해주시고 좋았습니다 :)”</blockquote>
+                    <div class="author-detail">
+                      <div class="name text-primary text-uppercase pt-2">sohidesu 님</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide text-center d-flex justify-content-center">
+                  <div class="review-item col-md-10">
+                    <i class="icon icon-review"></i>
+                    <blockquote class="fs-4">“이사와서 속눈썹펌 해봤는데 너무 맘에들어요😍<br>
+						일단 컬 모양 어울리게 해달라고 말씀드렸는데 지금까지 한 곳중에 제일 마음에 듭니다🤩<br>
+						✔️✔️약간 크고 둥글게,,,!! ✔️✔️ 다음에도 예약하고 올게요..!<br>
+						저 정말 샵 매일 옮겨다녀서 두 번 간 곳 없는데 정착할 것같아요!! 엄청 친절하시구..!👍🏻<br>
+						속눈썹펌 다 비슷할 것 같았는데 여긴 정말 유난히 맘에 드네요..!<br>
+						지속력만 좋으면 정말 최고일텐데 관리도 잘해야겠어요😆”</blockquote>
+                    <div class="author-detail">
+                      <div class="name text-primary text-uppercase pt-2">아이셔조아 님</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide text-center d-flex justify-content-center">
+                  <div class="review-item col-md-10">
+                    <i class="icon icon-review"></i>
+                    <blockquote class="fs-4">“컬이 진짜 최고에요!!<br>
+						무쌍눈인데 펌해도 딱붙지않고 너무조아용!<br>
+						다른곳보다 펌 유지력도 엄청조아용!!!!<br>
+						이쁘게해주셔서 감사해뇽💛”</blockquote>
+                    <div class="author-detail">
+                      <div class="name text-primary text-uppercase pt-2">알수없지62 님</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide text-center d-flex justify-content-center">
+                  <div class="review-item col-md-10">
+                    <i class="icon icon-review"></i>
+                    <blockquote class="fs-4">“넘넘 짱짱하자나요❤️<br>
+						제 속눈썹 상태도 정확하게 파악하시고 조언도 아끼지 않으시는 원장님은 사랑,,<br>
+						매번 진심이신 게 느껴져서 감동이에요!!<br>
+						저의 짧고 숱 없는 속눈썹을 영혼 끌어모아 올려주시는 능력자😆”</blockquote>
+                    <div class="author-detail">
+                      <div class="name text-primary text-uppercase pt-2">rim**** 님</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-icon swiper-arrow swiper-arrow-next position-absolute d-flex align-items-center justify-content-center">
+              <svg class="icon-arrow" width="25" height="25">
+                <use xlink:href="#arrow-right" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>      
+      <div class="swiper-pagination text-center position-absolute"></div>
+    </section>
+
+    <section id="price" class="position-relative padding-large">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="swiper collection-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide overflow-hidden">
+                <div class="product-card">
+                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                    <h3 class="card-title text-uppercase">
+					  　
+                    </h3>
+                  </div>
+                  <div class="image-overlay position-relative">
+                    <div class="product-image">
+                      <img src="images/product-item5.jpg" alt="product-item" class="product-image img-fluid">
+                      <div class="text-box box-slide position-absolute">
+                        <div class="text-content p-5 bg-light">
+                          <h3><strong>속눈썹 펌</strong> Eyelash Curl Design</h3>
+                          <p>설명설명설명설 명설명설명설명설명 설명설명 설명설명설명 설명설명설명설 명설명설명설 명설명설명설명설명</p>
+                          <ul>
+                            <li>✔ 특징트윽지이잉</li>
+                            <li>✔ 특징트윽지이잉</li>
+							<li>✔ 특징트윽지이잉</li>
+                          </ul>
+                          <a href="#" class="btn btn-primary mt-3 btn-lg">￦얼마얼마부터~</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+              <div class="swiper-slide overflow-hidden">
+                <div class="product-card">
+                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                    <h3 class="card-title text-uppercase">
+					  　
+                    </h3>
+                  </div>
+                  <div class="image-overlay position-relative">
+                    <div class="product-image">
+                      <img src="images/product-item6.jpg" alt="product-item" class="product-image img-fluid">
+
+                      <div class="text-box box-slide position-absolute">
+                        <div class="text-content p-5 bg-light">
+                          <h3><strong>속눈썹 연장</strong> Eyelash long Design</h3>
+                          <p>설명설명설명설 명설명설명설명설명 설명설명 설명설명설명 설명설명설명설 명설명설명설 명설명설명설명설명</p>
+                          <ul>
+                            <li>✔ 특징트윽지이잉</li>
+                            <li>✔ 특징트윽지이잉</li>
+							<li>✔ 특징트윽지이잉</li>
+                          </ul>
+                          <a href="#" class="btn btn-primary mt-3 btn-lg">￦얼마얼마부터~</a>
+                        </div>
+                      </div>
+                    </div>
+                  <!-- product-image -->
+                  </div>                  
+                </div>
+              </div>
+              <div class="swiper-slide overflow-hidden">
+                <div class="product-card">
+                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                    <h3 class="card-title text-uppercase">
+						　
+                    </h3>
+                  </div>
+                  <div class="image-overlay position-relative">
+                    <div class="product-image">
+                      <img src="images/product-item7.jpg" alt="product-item" class="product-image img-fluid">
+
+                      <div class="text-box box-slide position-absolute">
+                        <div class="text-content p-5 bg-light">
+                          <h3><strong>멤버쉽</strong> Membership</h3>
+                          <p>설명설명설명설 명설명설명설명설명 설명설명 설명설명설명 설명설명설명설 명설명설명설 명설명설명설명설명</p>
+                          <ul>
+                            <li>✔ 특징트윽지이잉</li>
+                            <li>✔ 특징트윽지이잉</li>
+							<li>✔ 특징트윽지이잉</li>
+                          </ul>
+                          <a href="#" class="btn btn-primary mt-3 btn-lg">￦얼마얼마부터~</a>
+                        </div>
+                      </div>
+                    </div>
+                  <!-- product-image -->
+                  </div>                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination position-absolute text-center"></div>
+    </section>
+
+    <section class="subscribe">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <div class="subscribe-content padding-large">
+              <div class="subscribe-header">
+                <h2 class="display-4">혹시, <strong>처음</strong>이세요?<br>
+					<strong>쿠폰</strong>받고 <strong>네이버로 예약</strong>하고 오세요<em>!</em></h2>
+              </div>
+                <a class="btn btn-full btn-success text-uppercase p-4 fs-5" href="https://pcmap.place.naver.com/place/1849973856/ticket?from=map&fromPanelNum=2&timestamp=202408021358">지금, <img height="20px" style="margin-top: -3px;" src="images/navericon.png" alt="" /> 예약하기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="overflow-hidden padding-large">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="row d-flex flex-wrap justify-content-between">
+            <div class="col-lg-4 col-sm-6 pb-3 pe-4">
+              <div class="footer-menu">
+                <h1 class="fw-bold">JUNNY.B</h1>
+                <p>사업자주소랑 이것저것 여기에쓸거임</p>
+              </div>
+              <div class="copyright">
+                <p>© Copyright 2024. Design by <a href="https://raintempolab.kr/">레인템포랩</a></p>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-6 pb-3">
+              <a href="https://www.instagram.com/junny.b_/"><div class="footer-menu text-uppercase">
+                <h5 class="widget-title pb-2">instagram</h5>
+				  <img src="images/single-post-item.png" alt="insta" width="100%" />
+              </div></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
